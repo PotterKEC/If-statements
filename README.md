@@ -1,17 +1,53 @@
-# Python Assignment Template
-This is a template repository for Python assignments in GitHub Classroom.
+# Python If Statements Assignment
 
-## Assignment Description
-[Describe your assignment here]
+## Overview
+In this assignment, you'll practice using comparison operators and if statements to build a grade calculator system. You'll determine a student's final score, passing status, letter grade, honor roll status, and eligibility for advanced courses.
 
-## Setup Instructions
-1. Accept the assignment in GitHub Classroom
-2. Clone the repository
-3. Open in GitHub Codespaces or locally
-4. Complete the assignment in `src/assignment.py`
-5. Test your solution by running `pytest`
-6. Commit and push your changes
+## Learning Objectives
+- Use arithmetic operators to calculate values
+- Use comparison operators to compare values
+- Implement if, if-else, and if-elif-else statements
+- Combine conditions using logical operators (and, or)
 
-## Requirements
-- Python 3.8+
-- pyt
+## Instructions
+
+### Task 1: Calculate the Final Score
+Calculate the `final_score` as the average of `test_score` and `exam_score`.
+
+### Task 2: Determine if the Student Passed
+Set the `passed` variable to `True` if the `final_score` is 60 or higher, otherwise set it to `False`.
+
+### Task 3: Assign a Letter Grade
+Assign a letter grade based on the `final_score` using these rules:
+- Score 90-100: "A"
+- Score 80-89: "B"
+- Score 70-79: "C"
+- Score 60-69: "D"
+- Score below 60: "F"
+
+### Task 4: Determine Honor Roll Status
+Set the `honor_roll` variable to `True` if the student has:
+- A `final_score` of 90 or higher
+- All assignments completed (`all_assignments_completed` is `True`)
+
+Otherwise, set it to `False`.
+
+### Task 5: Determine Advanced Course Eligibility
+Set the `can_take_advanced` variable to `True` if the student:
+- Passed (has a `final_score` of 60 or higher)
+- AND either:
+  - Has a letter grade of "A" OR
+  - Has a letter grade of "B" AND has completed all assignments
+
+Otherwise, set it to `False`.
+
+## Testing Your Code
+The assignment includes automatic tests that will check if your solution works correctly. To pass the assignment, all tests must pass. You can run the tests locally to check your progress.
+
+## Tips
+- Pay attention to the order of operations in your calculations
+- Be careful with your comparison operators (>, <, >=, <=, ==, !=)
+- Make sure you're using the correct logical operators (and, or) when combining conditions
+- Check the output printed to make sure your variables have the expected values
+
+Good luck!
